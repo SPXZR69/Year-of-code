@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 Year of code!</title>
+  <title>2026 Year of Code!</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,9 +43,12 @@
     tr:hover {
       background-color: #e0f7e0;
     }
-    h1 {
-      margin: 0;
-    }
+    /* Tech color codes */
+    .tech-python { background-color: #cce5ff; }
+    .tech-html-css { background-color: #ffe5b4; }
+    .tech-js { background-color: #fff5b4; }
+    .tech-python-html { background-color: #d4edda; }
+    .tech-any { background-color: #e2e3e5; }
     footer {
       text-align: center;
       padding: 1rem;
@@ -72,58 +75,59 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>1</td><td>Number Guessing Game</td><td>Python</td><td>A game where the computer picks a random number and the user guesses it.</td><td>How do I generate randomness? How do I give hints?</td></tr>
-        <tr><td>2</td><td>Dice Roller</td><td>Python</td><td>Simulates rolling one or more dice.</td><td>How many dice? How do I repeat rolls?</td></tr>
-        <tr><td>3</td><td>Simple Calculator</td><td>Python</td><td>Performs basic arithmetic based on user input.</td><td>How do I handle invalid input?</td></tr>
-        <tr><td>4</td><td>Countdown Timer</td><td>Python</td><td>Counts down from a given number of seconds.</td><td>How does time.sleep work?</td></tr>
-        <tr><td>5</td><td>Password Strength Checker</td><td>Python</td><td>Checks if a password meets basic security rules.</td><td>What makes a password strong?</td></tr>
-        <tr><td>6</td><td>Random Name Picker</td><td>Python</td><td>Chooses a random name from a list.</td><td>How do I store names?</td></tr>
-        <tr><td>7</td><td>To-Do List (CLI)</td><td>Python</td><td>A command-line task manager.</td><td>How do I add/remove items?</td></tr>
-        <tr><td>8</td><td>Email Slicer</td><td>Python</td><td>Splits an email into username and domain.</td><td>How does string splitting work?</td></tr>
-        <tr><td>9</td><td>Unit Converter</td><td>Python</td><td>Converts between common units.</td><td>How do I reuse conversion logic?</td></tr>
-        <tr><td>10</td><td>Rock Paper Scissors</td><td>Python</td><td>Play RPS against the computer.</td><td>How does computer choice work?</td></tr>
-        <tr><td>11</td><td>Word Counter</td><td>Python</td><td>Counts words in text input.</td><td>What defines a “word”?</td></tr>
-        <tr><td>12</td><td>Quiz Game</td><td>Python</td><td>A question-and-answer quiz.</td><td>How do I track score?</td></tr>
-        <tr><td>13</td><td>Number List Analyzer</td><td>Python</td><td>Finds min, max, and average of numbers.</td><td>How do lists work?</td></tr>
-        <tr><td>14</td><td>Password Generator</td><td>Python</td><td>Creates a random password of set length.</td><td>Which characters should I allow?</td></tr>
-        <tr><td>15</td><td>Contact Book</td><td>Python</td><td>Stores and retrieves contact details.</td><td>How do I save data to a file?</td></tr>
-        <tr><td>16</td><td>URL Parser</td><td>Python</td><td>Breaks a URL into parts.</td><td>What is a protocol/domain/path?</td></tr>
-        <tr><td>17</td><td>Alarm Clock</td><td>Python</td><td>Alerts the user at a set time.</td><td>How do I compare times?</td></tr>
-        <tr><td>18</td><td>File Renamer</td><td>Python</td><td>Renames multiple files automatically.</td><td>How do I loop over files?</td></tr>
-        <tr><td>19</td><td>Simple Logger</td><td>Python</td><td>Writes timestamped logs to a file.</td><td>Why are logs useful?</td></tr>
-        <tr><td>20</td><td>Text Adventure</td><td>Python</td><td>A choice-based story game.</td><td>How do choices change outcomes?</td></tr>
-        <tr><td>21</td><td>Base Converter</td><td>Python</td><td>Converts numbers between bases.</td><td>How does binary work?</td></tr>
-        <tr><td>22</td><td>Caesar Cipher</td><td>Python</td><td>Encrypts/decrypts text.</td><td>How does shifting letters work?</td></tr>
-        <tr><td>23</td><td>Weather Formatter</td><td>Python</td><td>Displays mock weather data nicely.</td><td>How should data be formatted?</td></tr>
-        <tr><td>24</td><td>Shopping List</td><td>Python</td><td>Manages a shopping list with saving.</td><td>How do I persist data?</td></tr>
-        <tr><td>25</td><td>Hangman Lite</td><td>Python</td><td>Guess letters to find a word.</td><td>How do I track guesses?</td></tr>
-        <tr><td>26</td><td>Quote Generator</td><td>Python</td><td>Shows a random quote each run.</td><td>Where should quotes be stored?</td></tr>
-        <tr><td>27</td><td>Personal Homepage</td><td>HTML/CSS</td><td>A basic static webpage about you.</td><td>What content belongs on a homepage?</td></tr>
-        <tr><td>28</td><td>Click Counter</td><td>HTML/JS</td><td>Counts how many times a button is clicked.</td><td>How does JS handle events?</td></tr>
-        <tr><td>29</td><td>Web Calculator</td><td>HTML/JS</td><td>Calculator running in the browser.</td><td>How do inputs connect to logic?</td></tr>
-        <tr><td>30</td><td>Colour Picker</td><td>HTML/JS</td><td>Generates random colours.</td><td>How do RGB/HEX values work?</td></tr>
-        <tr><td>31</td><td>Digital Clock</td><td>HTML/JS</td><td>Shows live time in browser.</td><td>How often should time update?</td></tr>
-        <tr><td>32</td><td>Web To-Do List</td><td>HTML/JS</td><td>A browser-based task list.</td><td>How do I modify the DOM?</td></tr>
-        <tr><td>33</td><td>Form Validation</td><td>HTML/JS</td><td>Checks user input before submission.</td><td>What inputs need validation?</td></tr>
-        <tr><td>34</td><td>Quiz Website</td><td>HTML/JS</td><td>A simple interactive quiz page.</td><td>How do I move between questions?</td></tr>
-        <tr><td>35</td><td>Temp Converter</td><td>HTML/JS</td><td>Converts temperature live.</td><td>How do formulas map to UI?</td></tr>
-        <tr><td>36</td><td>Typing Speed Tester</td><td>HTML/JS</td><td>Measures typing speed.</td><td>How do I track time and accuracy?</td></tr>
-        <tr><td>37</td><td>Landing Page</td><td>HTML/CSS</td><td>A styled single-page layout.</td><td>How do layouts work?</td></tr>
-        <tr><td>38</td><td>Image Gallery</td><td>HTML/CSS</td><td>Displays images in a grid.</td><td>How does CSS grid/flex work?</td></tr>
-        <tr><td>39</td><td>Theme Switcher</td><td>HTML/JS</td><td>Toggles light/dark mode.</td><td>How do I change styles dynamically?</td></tr>
-        <tr><td>40</td><td>Story Generator</td><td>Python</td><td>Generates random short stories.</td><td>How do templates work?</td></tr>
-        <tr><td>41</td><td>Notes App (CLI)</td><td>Python</td><td>Saves dated notes.</td><td>How do I organise notes?</td></tr>
-        <tr><td>42</td><td>CSV Viewer</td><td>Python</td><td>Reads and displays CSV data.</td><td>What is structured data?</td></tr>
-        <tr><td>43</td><td>API Data Fetcher</td><td>Python</td><td>Retrieves data from an API.</td><td>What is JSON?</td></tr>
-        <tr><td>44</td><td>Website Status Checker</td><td>Python</td><td>Checks if a website is online.</td><td>What is an HTTP response?</td></tr>
-        <tr><td>45</td><td>Bookmark Manager</td><td>Python</td><td>Stores and retrieves URLs.</td><td>How should bookmarks be organised?</td></tr>
-        <tr><td>46</td><td>Quiz with High Scores</td><td>Python</td><td>Saves best quiz results.</td><td>How do I compare scores?</td></tr>
-        <tr><td>47</td><td>Rule-Based Chatbot</td><td>Python</td><td>Responds using simple logic.</td><td>How do patterns trigger replies?</td></tr>
-        <tr><td>48</td><td>Python Form Processor</td><td>Python + HTML</td><td>Processes form input locally.</td><td>How does frontend talk to backend?</td></tr>
-        <tr><td>49</td><td>Daily Planner</td><td>Python</td><td>Generates a daily schedule.</td><td>What constraints shape a day?</td></tr>
-        <tr><td>50</td><td>Log Analyzer</td><td>Python</td><td>Analyzes error logs.</td><td>How do I detect patterns?</td></tr>
-        <tr><td>51</td><td>Mini Dashboard</td><td>HTML/JS</td><td>Displays mock stats visually.</td><td>What makes data readable?</td></tr>
-        <tr><td>52</td><td>Year Review Project</td><td>Any</td><td>Improve one previous project.</td><td>What did I learn this year?</td></tr>
+        <!-- Week 1 -->
+        <tr class="tech-python"><td>1</td><td>Number Guessing Game</td><td>Python</td><td>A game where the computer picks a random number and the user guesses it.</td><td>How do I generate randomness? How do I give hints?</td></tr>
+        <tr class="tech-python"><td>2</td><td>Dice Roller</td><td>Python</td><td>Simulates rolling one or more dice.</td><td>How many dice? How do I repeat rolls?</td></tr>
+        <tr class="tech-python"><td>3</td><td>Simple Calculator</td><td>Python</td><td>Performs basic arithmetic based on user input.</td><td>How do I handle invalid input?</td></tr>
+        <tr class="tech-python"><td>4</td><td>Countdown Timer</td><td>Python</td><td>Counts down from a given number of seconds.</td><td>How does time.sleep work?</td></tr>
+        <tr class="tech-python"><td>5</td><td>Password Strength Checker</td><td>Python</td><td>Checks if a password meets basic security rules.</td><td>What makes a password strong?</td></tr>
+        <tr class="tech-python"><td>6</td><td>Random Name Picker</td><td>Python</td><td>Chooses a random name from a list.</td><td>How do I store names?</td></tr>
+        <tr class="tech-python"><td>7</td><td>To-Do List (CLI)</td><td>Python</td><td>A command-line task manager.</td><td>How do I add/remove items?</td></tr>
+        <tr class="tech-python"><td>8</td><td>Email Slicer</td><td>Python</td><td>Splits an email into username and domain.</td><td>How does string splitting work?</td></tr>
+        <tr class="tech-python"><td>9</td><td>Unit Converter</td><td>Python</td><td>Converts between common units.</td><td>How do I reuse conversion logic?</td></tr>
+        <tr class="tech-python"><td>10</td><td>Rock Paper Scissors</td><td>Python</td><td>Play RPS against the computer.</td><td>How does computer choice work?</td></tr>
+        <tr class="tech-python"><td>11</td><td>Word Counter</td><td>Python</td><td>Counts words in text input.</td><td>What defines a “word”?</td></tr>
+        <tr class="tech-python"><td>12</td><td>Quiz Game</td><td>Python</td><td>A question-and-answer quiz.</td><td>How do I track score?</td></tr>
+        <tr class="tech-python"><td>13</td><td>Number List Analyzer</td><td>Python</td><td>Finds min, max, and average of numbers.</td><td>How do lists work?</td></tr>
+        <tr class="tech-python"><td>14</td><td>Password Generator</td><td>Python</td><td>Creates a random password of set length.</td><td>Which characters should I allow?</td></tr>
+        <tr class="tech-python"><td>15</td><td>Contact Book</td><td>Python</td><td>Stores and retrieves contact details.</td><td>How do I save data to a file?</td></tr>
+        <tr class="tech-python"><td>16</td><td>URL Parser</td><td>Python</td><td>Breaks a URL into parts.</td><td>What is a protocol/domain/path?</td></tr>
+        <tr class="tech-python"><td>17</td><td>Alarm Clock</td><td>Python</td><td>Alerts the user at a set time.</td><td>How do I compare times?</td></tr>
+        <tr class="tech-python"><td>18</td><td>File Renamer</td><td>Python</td><td>Renames multiple files automatically.</td><td>How do I loop over files?</td></tr>
+        <tr class="tech-python"><td>19</td><td>Simple Logger</td><td>Python</td><td>Writes timestamped logs to a file.</td><td>Why are logs useful?</td></tr>
+        <tr class="tech-python"><td>20</td><td>Text Adventure</td><td>Python</td><td>A choice-based story game.</td><td>How do choices change outcomes?</td></tr>
+        <tr class="tech-python"><td>21</td><td>Base Converter</td><td>Python</td><td>Converts numbers between bases.</td><td>How does binary work?</td></tr>
+        <tr class="tech-python"><td>22</td><td>Caesar Cipher</td><td>Python</td><td>Encrypts/decrypts text.</td><td>How does shifting letters work?</td></tr>
+        <tr class="tech-python"><td>23</td><td>Weather Formatter</td><td>Python</td><td>Displays mock weather data nicely.</td><td>How should data be formatted?</td></tr>
+        <tr class="tech-python"><td>24</td><td>Shopping List</td><td>Python</td><td>Manages a shopping list with saving.</td><td>How do I persist data?</td></tr>
+        <tr class="tech-python"><td>25</td><td>Hangman Lite</td><td>Python</td><td>Guess letters to find a word.</td><td>How do I track guesses?</td></tr>
+        <tr class="tech-python"><td>26</td><td>Quote Generator</td><td>Python</td><td>Shows a random quote each run.</td><td>Where should quotes be stored?</td></tr>
+        <tr class="tech-html-css"><td>27</td><td>Personal Homepage</td><td>HTML/CSS</td><td>A basic static webpage about you.</td><td>What content belongs on a homepage?</td></tr>
+        <tr class="tech-js"><td>28</td><td>Click Counter</td><td>HTML/JS</td><td>Counts how many times a button is clicked.</td><td>How does JS handle events?</td></tr>
+        <tr class="tech-js"><td>29</td><td>Web Calculator</td><td>HTML/JS</td><td>Calculator running in the browser.</td><td>How do inputs connect to logic?</td></tr>
+        <tr class="tech-js"><td>30</td><td>Colour Picker</td><td>HTML/JS</td><td>Generates random colours.</td><td>How do RGB/HEX values work?</td></tr>
+        <tr class="tech-js"><td>31</td><td>Digital Clock</td><td>HTML/JS</td><td>Shows live time in browser.</td><td>How often should time update?</td></tr>
+        <tr class="tech-js"><td>32</td><td>Web To-Do List</td><td>HTML/JS</td><td>A browser-based task list.</td><td>How do I modify the DOM?</td></tr>
+        <tr class="tech-js"><td>33</td><td>Form Validation</td><td>HTML/JS</td><td>Checks user input before submission.</td><td>What inputs need validation?</td></tr>
+        <tr class="tech-js"><td>34</td><td>Quiz Website</td><td>HTML/JS</td><td>A simple interactive quiz page.</td><td>How do I move between questions?</td></tr>
+        <tr class="tech-js"><td>35</td><td>Temp Converter</td><td>HTML/JS</td><td>Converts temperature live.</td><td>How do formulas map to UI?</td></tr>
+        <tr class="tech-js"><td>36</td><td>Typing Speed Tester</td><td>HTML/JS</td><td>Measures typing speed.</td><td>How do I track time and accuracy?</td></tr>
+        <tr class="tech-html-css"><td>37</td><td>Landing Page</td><td>HTML/CSS</td><td>A styled single-page layout.</td><td>How do layouts work?</td></tr>
+        <tr class="tech-html-css"><td>38</td><td>Image Gallery</td><td>HTML/CSS</td><td>Displays images in a grid.</td><td>How does CSS grid/flex work?</td></tr>
+        <tr class="tech-js"><td>39</td><td>Theme Switcher</td><td>HTML/JS</td><td>Toggles light/dark mode.</td><td>How do I change styles dynamically?</td></tr>
+        <tr class="tech-python"><td>40</td><td>Story Generator</td><td>Python</td><td>Generates random short stories.</td><td>How do templates work?</td></tr>
+        <tr class="tech-python"><td>41</td><td>Notes App (CLI)</td><td>Python</td><td>Saves dated notes.</td><td>How do I organise notes?</td></tr>
+        <tr class="tech-python"><td>42</td><td>CSV Viewer</td><td>Python</td><td>Reads and displays CSV data.</td><td>What is structured data?</td></tr>
+        <tr class="tech-python"><td>43</td><td>API Data Fetcher</td><td>Python</td><td>Retrieves data from an API.</td><td>What is JSON?</td></tr>
+        <tr class="tech-python"><td>44</td><td>Website Status Checker</td><td>Python</td><td>Checks if a website is online.</td><td>What is an HTTP response?</td></tr>
+        <tr class="tech-python"><td>45</td><td>Bookmark Manager</td><td>Python</td><td>Stores and retrieves URLs.</td><td>How should bookmarks be organised?</td></tr>
+        <tr class="tech-python"><td>46</td><td>Quiz with High Scores</td><td>Python</td><td>Saves best quiz results.</td><td>How do I compare scores?</td></tr>
+        <tr class="tech-python"><td>47</td><td>Rule-Based Chatbot</td><td>Python</td><td>Responds using simple logic.</td><td>How do patterns trigger replies?</td></tr>
+        <tr class="tech-python-html"><td>48</td><td>Python Form Processor</td><td>Python + HTML</td><td>Processes form input locally.</td><td>How does frontend talk to backend?</td></tr>
+        <tr class="tech-python"><td>49</td><td>Daily Planner</td><td>Python</td><td>Generates a daily schedule.</td><td>What constraints shape a day?</td></tr>
+        <tr class="tech-python"><td>50</td><td>Log Analyzer</td><td>Python</td><td>Analyzes error logs.</td><td>How do I detect patterns?</td></tr>
+        <tr class="tech-js"><td>51</td><td>Mini Dashboard</td><td>HTML/JS</td><td>Displays mock stats visually.</td><td>What makes data readable?</td></tr>
+        <tr class="tech-any"><td>52</td><td>Year Review Project</td><td>Any</td><td>Improve one previous project.</td><td>What did I learn this year?</td></tr>
       </tbody>
     </table>
   </main>
